@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+    <h1 id="app-heading">Budget App</h1>
+    <div id="head-div" style="width: 100vw; display: flex; flex-direction: row; justify-content: center; align-items: start; gap: 20px;">
+        <div style="display: flex; flex-direction: column; justify-content: start; align-items: start; padding: 20px; background-color: skyblue; gap: 10px; height: 35vh; border-radius: 10px;">
+            <h2>Budget</h2>
+            <input id="set-budget-input" type="number" min="1" placeholder="Enter total amount" style="padding: 10px 20px 10px 5px; font-size: 15px;"/>
+            <button id="set-budget-btn" style="padding: 10px 20px; font-size: 15px; cursor: pointer;">Set Budget</button>
+        </div>
+        <div style="display: flex; flex-direction: column; justify-content: start; align-items: start; padding: 20px; background-color: skyblue; gap: 10px; height: 35vh; border-radius: 10px;">
+            <h2>Expenses</h2>
+            <input id="expense-input" type="text" placeholder="e.g. Movie" style="padding: 10px 20px 10px 5px; font-size: 15px;"/>
+            <input id="expense-amount-input" type="number" min="1" placeholder="e.g. 250" style="padding: 10px 20px 10px 5px; font-size: 15px;"/>
+            <button id="add-btn" style="padding: 10px 20px; font-size: 15px; cursor: pointer; text-align: center;">Add</button>
+        </div>
+    </div>
+    <div style="width: 100vw; display: flex; justify-content: center; padding-top: 30px;">
+        <div style="display: flex; flex-direction: row; justify-content: space-between; gap: 100px; padding: 30px; background-color: skyblue; border-radius: 20px;">
+            <div>
+                <h2>Total Budget</h2>
+                <p id="total-budget-tag"></p>
+            </div>
+            <div>
+                <h2>Expenses</h2>
+                <p id="total-expense-tag"></p>
+            </div>
+            <div>
+                <h2>Balance</h2>
+                <p id="remaining-bal-tag"></p>
+            </div>
+        </div>
+    </div>
+
+    <div style="width: 100vw; padding-top: 50px;">
+        <div style="background-color: skyblue; width: 40vw; margin: 0 auto; padding: 50px;">
+            <h2 style="margin-bottom: 20px;">Expense List</h2>
+            <ul id="expense-list" style="display: flex; flex-direction: column; gap: 20px;">
+                
+
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="scripts.js"></script>
+
+</body>
+</html>
